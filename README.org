@@ -1,40 +1,10 @@
-#+title: Submodule: MeetiClone with Bootstrap
+#+title: Submodule: Podcast with Bootstrap
 
 * About
-This is submodule of my studying notes which were released as a public project in order to show it as part of a bigger portfolio, in this submodule I portrait the Second website design I learned to create by following the tutorial in the Bootstrap course made by the Mexican programmer and designer Juan Pablo De la torre Valdez in Udemy.
+This is submodule of my studying notes which were released as a public project in order to show it as part of a bigger portfolio, in this submodule I portrait the third website design I learned to create by following the tutorial in the Bootstrap course made by the Mexican programmer and designer Juan Pablo De la torre Valdez in Udemy.
 + Course Name: Boostrap 5 y SASS - La Guia practica - Crea 10 sitios
 
 * Deployment
-[[https://xandro2021.github.io/BootstrapMeetiClone/][Github Pages Link]]
+[[https://xandro2021.github.io/BootstrapPodcast/][Github Pages Link]]
 
 * Interesting things learned in this Project
-** Install dependencies for development
-#+begin_src bash
-npm i --save-dev bootstrap sass
-#+end_src
-
-** Use of * to avoid having to write custom.$primary
-#+begin_src scss
-@use '../custom' as *;
-
-.header {
-    background-color: $primary;
-}
-#+end_src
-
-** Overwrite Bootstrap-colors
-+ In _custom.scss is showed about how to simple modification like colors
-
-** overwrite bootstrap mediaquerys
-It is possible to overwrite the values, but you need to go into mixins and breakpoints folder to find the names that were given by bootstrap, then you can overwrite it
-_header.scss shows a simple example
-#+begin_src scss
-@include media-breakpoint-up(md) {
-    padding-top: 10rem;
-    padding-bottom: 10rem;
-}
-#+end_src
-
-** When changing something in bootstrap always used the specific property to change instead of using the short css version
-Example: instead of writting padding: 3rem 0, use padding-top: 3rem and padding-bottom:3rem
-+ Sometimes, some bootstrap clases have a specific value for some of the directions, and I we used the short css rules to do the changes we will be overwriting some default bootstrap values that we were not taking into consideration

@@ -1,3 +1,14 @@
+// Add breakpoint
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px,
+  xxxl: 1800px
+) !default;
+
 // Colores
 $verde: #84d9bc;
 $gris: #313c4e;

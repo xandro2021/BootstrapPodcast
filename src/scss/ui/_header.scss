@@ -6,7 +6,7 @@
     padding-top: 5rem;
     padding-bottom: 5rem;
 
-    @media (min-width: 1800px) {
+    @include media-breakpoint-up(xxxl) {
         padding-top: 10rem;
         padding-bottom: 10rem;
         background-position: center 17%;

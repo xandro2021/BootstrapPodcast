@@ -16,3 +16,21 @@ npm i --save-dev gulp
 npm i --save-dev gulp-imagemin@7.1.0
 npm i --save-dev bootstrap
 #+end_src
+** Use off-set to align the grid when the content isn't using the whole 12 columns
+#+begin_src scss
+        <div class="container-xl">
+            <div class="row align-items-center">
+                <div class="col-md-7">
+                    <h2>Llega a miles y gana dinero</h2>
+                    <p class="mt-2">
+                        Los podcast se han convertido en un medio de entretenimiento que cada dia gana mas seguidores,
+                        con temas variados puedes crear tu propio podcast, ser escuchado(a) por miles de personas y
+                        convertir tu pasion en un negocio.
+                    </p>
+                </div>
+                <div class="col-md-4 offset-md-1">
+                    <img class="img-fluid imagen" alt="imagenes podcast" src="build/img/podcast_cover.png" />
+                </div>
+            </div>
+        </div>
+#+end_src

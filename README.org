@@ -8,3 +8,11 @@ This is submodule of my studying notes which were released as a public project i
 [[https://xandro2021.github.io/BootstrapPodcast/][Github Pages Link]]
 
 * Interesting things learned in this Project
+** Installing Packages
+#+begin_src bash
+npm init
+npm i --save-dev sass gulp-sass
+npm i --save-dev gulp
+npm i --save-dev gulp-imagemin@7.1.0
+npm i --save-dev bootstrap
+#+end_src

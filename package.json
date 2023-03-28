@@ -1,0 +1,26 @@
+{
+  "name": "bootstrappodcast",
+  "version": "1.0.0",
+  "description": "Another bootstrap SCSS project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/xandro2021/BootstrapPodcast.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xandro2021/BootstrapPodcast/issues"
+  },
+  "homepage": "https://github.com/xandro2021/BootstrapPodcast#readme",
+  "devDependencies": {
+    "bootstrap": "^5.2.3",
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.60.0"
+  }
+}

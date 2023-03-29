@@ -56,3 +56,48 @@ npm i --save-dev bootstrap
     }
 }
 #+end_src
+** Interpolation with Vars and Calc
+#+html: <div><img src="build/img/interpolacion.png" alt="ejemplo margin negativo" /></div>
+[[file:build/img/interpolacion.png][Imagen del Ejemplo]]
++ It was used calc to align the card with the increased size to the negative margins by adding the amound of size in the padding top and background-position that was taken by those negative margins.
++ It was created a variable to make it easier to create the changes without messing with the alignment
++ The calc function required the interpolation to force the detection of the variable in the calc function (Although in modern SCSS and CSS it looks that it wasn't longer necessary)
+#+begin_src scss
+$separacion: 5rem;
+
+.plan {
+    padding: 16rem 4rem 4rem 4rem;
+
+    @include media-breakpoint-up(md) {
+        @include transition(scale 300ms ease);
+        &:hover {
+            scale: 1.1;
+        }
+    }
+    .precio {
+        font-size: 1.8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    &.inicio {
+        @include m.bgIcono('../img/icono_inicio.svg');
+    }
+
+    &.negocio {
+        @include m.bgIcono('../img/icono_negocio.svg');
+        @include media-breakpoint-up(md) {
+            margin-top: -#{$separacion};
+            margin-bottom: -#{$separacion};
+            border-radius: 2rem;
+            z-index: 1;
+            padding-top: calc(16rem + #{$separacion});
+            background-position-y: calc(2rem + #{$separacion});
+        }
+    }
+
+    &.pro {
+        @include m.bgIcono('../img/icono_pro.svg');
+    }
+}
+#+end_src

@@ -29,3 +29,12 @@
         display: inline-block;
     }
 }
+
+.boton-plan {
+    @extend .btn-header;
+    border: 1px $white solid;
+
+    @include media-breakpoint-up(md) {
+        display: block;
+    }
+}

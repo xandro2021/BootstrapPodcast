@@ -34,3 +34,25 @@ npm i --save-dev bootstrap
             </div>
         </div>
 #+end_src
+** Increase relatively the height of the component regarding other similar components by using negative margins
+#+html: <div><img src="build/img/ejemploMargin.png" alt="ejemplo margin negativo" /></div>
+[[file:build/img/ejemploMargin.png][Imagen del Ejemplo]]
+#+begin_src scss
+.plan {
+    padding: 16rem 4rem 4rem 4rem;
+
+    .precio {
+        font-size: 1.8rem;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    &.negocio {
+        @include media-breakpoint-up(md) {
+            margin-top: -5rem;
+            margin-bottom: -5rem;
+            border-radius: 2rem;
+        }
+    }
+}
+#+end_src

@@ -143,11 +143,11 @@ h2, .h2 {
 }
 
 h3, .h3 {
-  font-size: calc(1.475rem + 2.7vw);
+  font-size: calc(1.445rem + 2.34vw);
 }
 @media (min-width: 1200px) {
   h3, .h3 {
-    font-size: 3.5rem;
+    font-size: 3.2rem;
   }
 }
 
@@ -8418,7 +8418,7 @@ textarea.form-control-lg {
 }
 
 .fs-3 {
-  font-size: calc(1.475rem + 2.7vw) !important;
+  font-size: calc(1.445rem + 2.34vw) !important;
 }
 
 .fs-4 {
@@ -11775,7 +11775,7 @@ textarea.form-control-lg {
     font-size: 3.6rem !important;
   }
   .fs-3 {
-    font-size: 3.5rem !important;
+    font-size: 3.2rem !important;
   }
   .fs-4 {
     font-size: 3rem !important;
@@ -11991,4 +11991,39 @@ textarea.form-control-lg {
   background-color: #84d9bc;
   display: block;
   margin-top: -1.4rem;
+}
+
+.planes h2 {
+  color: #fff;
+  display: inline-block;
+  margin-top: 5rem;
+}
+@media (min-width: 768px) {
+  .planes h2 {
+    margin-top: 0;
+  }
+}
+.planes h2::after {
+  content: "";
+  height: 1rem;
+  width: 100%;
+  background-color: #84d9bc;
+  display: block;
+  margin-top: -1.4rem;
+}
+
+.plan {
+  padding: 16rem 4rem 4rem 4rem;
+}
+.plan .precio {
+  font-size: 1.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .plan.negocio {
+    margin-top: -5rem;
+    margin-bottom: -5rem;
+    border-radius: 2rem;
+  }
 }

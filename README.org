@@ -17,7 +17,7 @@ npm i --save-dev gulp-imagemin@7.1.0
 npm i --save-dev bootstrap
 #+end_src
 ** Use off-set to align the grid when the content isn't using the whole 12 columns
-#+begin_src scss
+#+begin_src html
         <div class="container-xl">
             <div class="row align-items-center">
                 <div class="col-md-7">

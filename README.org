@@ -15,6 +15,7 @@ npm i --save-dev sass gulp-sass
 npm i --save-dev gulp
 npm i --save-dev gulp-imagemin@7.1.0
 npm i --save-dev bootstrap
+npm i --save-dev gulp-purgecss gulp-rename
 #+end_src
 ** Offset in Bootstrap
 *** Use off-set to align the grid when the content isn't using the whole 12 columns

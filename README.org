@@ -133,3 +133,12 @@ $separacion: 5rem;
     }
 }
 #+end_src
+** Edit Bootstrap Container to create a container class with BEM name convention
++ With this code, the class footer__container will have the same behavior than the default bootstrap container
++ It could have also being modified by inheritage from .container but it was recommended by the instructor to be use this approach
+#+begin_src scss
+&__container {
+    @include make-container;
+    max-width: map-get($map: $container-max-widths, $key: xxl);
+}
+#+end_src
